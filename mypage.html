@@ -20,6 +20,13 @@
             text-align: center;
             color:white;
         }
+        @media screen and (min-width: 992px) {
+  body {
+    background-color: cyan;
+  }
+  
+  }
+
     </style>
 </head>
 
@@ -30,7 +37,7 @@
     </div>
     <div class="row">
                         <nav id="navbar">
-                <header>Contents</header>
+                <h2>Contents</h2>
                 <ul>
                     <a class="nav-link" href="#Introduction" rel="internal">
                         <li>Introduction</li>
@@ -38,8 +45,8 @@
                     <a class="nav-link" href="#Why_you_should_learn_JavaScript" rel="internal">
                         <li>Why you should learn JavaScript</li>
                     </a>
-                    <a class="nav-link" href="#JavaScript_Syntax" rel="internal">
-                        <li>JavaScript Syntax</li>
+                    <a class="nav-link" href="#JavaScript_hello_world" rel="internal">
+                        <li>JavaScript hello world</li>
                     </a>
                     <a class="nav-link" href="#Variables" rel="internal">
                         <li>Variables</li>
@@ -47,18 +54,18 @@
                     <a class="nav-link" href="#Operators" rel="internal">
                         <li>Operators</li>
                     </a>
-                    <a class="nav-link" href="#VIf...Else" rel="internal">
-                        <li>If...Else</li>
-                    </a>
-                    <a class="nav-link" href="#While loop" rel="internal">
+                
+                    
+                    
+                    <a class="nav-link" href="#While_loop" rel="internal">
                         <li>While loop</li>
-                        <a class="nav-link" href="Switch_case" rel="internal">
+                        <a class="nav-link" href="#Switch_case" rel="internal">
                                 <li>Switch case</li>
                         </a> 
                     <a class="nav-link" href="#for_loop" rel="internal">
                         <li>for_loop</li>
                     </a>
-                    <a class="nav-link" href="Functions" rel="internal">
+                    <a class="nav-link" href="#Functions" rel="internal">
                         <li>Functions</li>
                     </a>
                 </ul>
@@ -71,7 +78,7 @@
             <article><p>JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications. It is complimentary to and integrated with Java. JavaScript is very easy to implement because it is integrated with HTML. It is open and cross-platform.</p></article>
                 
         </section>
-        <section class="main-section" id="Why _you_should_learn_JavaScript">
+        <section class="main-section" id="Why_you_should_learn_JavaScript">
 
             <h3>Why you should learn JavaScript</h3>
             <article>
@@ -84,22 +91,96 @@
                 <li>Due to high demand, there is tons of job growth and high pay for those who know JavaScript. You can navigate over to different job sites to see what having JavaScript skills looks like in the job market.</li>
                 </ul></artice>
         </section>
-        <section class="main-section" id="JavaScript_Syntax">
+        <section class="main-section" id="JavaScript_hello_world">
 
-            <h3>JavaScript Syntax</h3>
-            <article><p>JavaScript can be implemented using JavaScript statements that are placed within the <script>... </script> HTML tags in a web page.</p>
+            <h3>JavaScript hello world</h3>
+            <article>
+                <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+                    </p>
+                <code><p>
+                    function greetMe(yourName){<br>
+                    alert("hello" +yourName);
+                    }<br>
+                    greetMe("world");<br>
+                    </p></code>
                 
             </article>
         </section>
         <section class="main-section" id="Variables">
-
             <h3>Variables</h3>
-            <article></article>
+            <article><p>JavaScript variables are containers for storing data values.</p>
+                <p>var x = 5;<br>
+                    var y = 6;<br>
+                    var z = x + y;</p>
+                    <p>From the example above, you can expect:</p>
+                    <p><ul><li>X stores the valve 5</li>
+                        <li>y stores the valve 5</li>
+                        <li>z stores the valve 11</li>
+                    </ul>
+                    </p></article></section>
+                    <section class="main-section" id="Operators">
+                            <h3>Operators</h3>
+                            <section class="main-section" id="Variables">
+                                    <article><p>The assignment operator (=) assigns a value to a variable.</p>
+                                    <code>var x = 10;</code>
+                                    <p>multiplication operator (*) multiplies numbers:<br>
+                                        <code>var x = 5;<br>
+                                            var y = 2;<br>
+                                            var z = x * y;</code></p>
+                                </article></section>
+                                    <section class="main-section" id="for_loop">
+                                            <h3>for loop</h3><article></article></section>
+                                            <section class="main-section" id="for_loop">
+                                                    <article><p>The for loop has the following syntax</p>
+                                                    <p> <code>for (statement 1; statement 2; statement 3)<br>
+                                                         {<br>
+                                                        code block<br>
+                                                     } </code></p></article></section>
+                                                    <section class="main-section" id="While loop">
+                                                        <h3>While loop</h3>
+                                                        <article><p>The while loop loops through a block of code as long as a specified condition is true.<br>
+                                                            In the following example, the code in the loop will run, over and over again, as long as a variable (i) is less than 1</p>
+                                                            <code> while (i < 10) {<br>
+                                                                text += "The number is " + i;<br>
+                                                                i++;}<br>
+                                                            </code>
+                                                        </article>
 
-        </section>
-    </main>
+                                                    </section>                                          
+                                                        <section class="main-section" id="Switch_case">
+                                                                                                            <h3>Switch case</h3>
+                                                                                                            <article><p>The syntax is shown below;<br>
+                                                                                                                switch(expression) {<br>
+                                                                                                                    case x:<br>
+                                                                                                                      // code block<br>
+                                                                                                                      break;<br>
+                                                                                                                    case y:<br>
+                                                                                                                      // code block
+                                                                                                                      break;<br>
+                                                                                                                    default:<br>
+                                                                                                                      // code block<br>
+                                                                                                                  }<br>
+                                                                                                                  <p>This is how it works:<br>
+                                                                                                                    <ul>
+                                                                                                                  <li>The switch expression is evaluated once.</li>
+                                                                                                                  <li></li>The value of the expression is compared with the values of each case.</li>
+                                                                                                                  <li></li>If there is a match, the associated block of code is executed.</li></ul></p>
+                                                                                                                  
 
-    </div>
-</body>
+                                                                                                            </p></article></section>
+                                                                                                            <section class="main-section" id="Functions">
+            
+                                                                                                                    <h3>Functions</h3>
+                                                                                                                    <article><p>A JavaScript function can also be defined using an expression.<br>
+                                                                                                                        A function expression can be stored in a variable. An example is shown below<br>
+                                                                                                                        <code> var x = function (a, b) {return a * b};</code>
 
-</html>
+                                                                                                                        </p>
+                                                                                                                    <p> <code></code></p></article></section>
+                                                                                                                    </main>
+                            </div>
+                            </body>
+                            </html>               
+    
+
+    
